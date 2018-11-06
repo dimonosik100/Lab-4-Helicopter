@@ -1,6 +1,6 @@
 #include <iostream>
 #include "helicopter.h"
-
+// Homework for vstup v specialnist
 using namespace std;
 
 void putIntoObject(Helicopter helic[3]){
