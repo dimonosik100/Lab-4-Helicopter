@@ -41,6 +41,6 @@ Helicopter::Helicopter() = default;
 
 std::ostream &operator<<(std::ostream &os, const Helicopter &helicopter1) {
     os << "seats: " << helicopter1.seats << " name: " << helicopter1.name << " velocityMax: " << helicopter1.velocityMax
-       << " x: " << helicopter1.x << " y: " << helicopter1.y;
+       << " pilots: " << helicopter1.pilots << " passangers: " << helicopter1.passangers;
     return os;
 }

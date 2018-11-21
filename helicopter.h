@@ -13,7 +13,7 @@ class Helicopter {
     char name;
     int velocityMax;
 protected:
-    int x, y;
+    int pilots, passangers;
 public:
     Helicopter();
     Helicopter(int seats, char name, int velocityMax);

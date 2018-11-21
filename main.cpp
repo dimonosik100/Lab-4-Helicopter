@@ -3,7 +3,7 @@
 // Homework for vstup v specialnist
 using namespace std;
 
-void putIntoObject(Helicopter helic[3]){
+void setHelicopterProperties(Helicopter *helicopters){
     for (int i = 0; i < 3; ++i) {
         char name;
         int seats;
@@ -14,10 +14,10 @@ void putIntoObject(Helicopter helic[3]){
         cin >> seats;
         cout << "Please tap max velocity" << "\n";
         cin >> velocityMax;
-        helic[i].setName(name);
-        helic[i].setSeats(seats);
-        helic[i].setVelocityMax(velocityMax);
-        cout << helic[i] << "\n";
+        helicopters[i].setName(name);
+        helicopters[i].setSeats(seats);
+        helicopters[i].setVelocityMax(velocityMax);
+        cout << helicopters[i] << "\n";
 
 
     }
@@ -31,11 +31,11 @@ int main() {
     cout << helicopter2 << "\n";
     cout << helicopter3 << "\n";
 
-    Helicopter helic[3];
-    helic[0] = helicopter1;
-    helic[1] = helicopter2;
-    helic[2] = helicopter3;
-    putIntoObject(helic);
+    Helicopter helicopters[3];
+    helicopters[0] = helicopter1;
+    helicopters[1] = helicopter2;
+    helicopters[2] = helicopter3;
+    setHelicopterProperties(helicopters);
 
 
     return 0;
